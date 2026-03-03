@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+     @font-face {
+            font-family: 'FontA';
+            src: url('fonts/SEGUIBL.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+     @font-face {
+            font-family: 'FontB';
+            src: url("fonts/NOTOSERIFSC-VF.ttf") format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+    @font-face {
+            font-family: 'FontC';
+            src: url("fonts/ARIAL.ttf") format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background-color: #f7f1e9;
+      width: 100vw;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+    .font24pt-FontB {
+     font-family: 'FontB', sans-serif;
+     font-size: 24pt;
+     color: #405144;
+     line-height: 1.7;
+     }
+    .font40pt-FontB {
+     font-family: 'FontB', serif;
+     font-size: 40pt;
+     color: #f7f1e9;
+     text-align: center;
+     margin: 30px 0;
+     }
+     .font28pt-FontB {
+     font-family: 'FontB', sans-serif;
+     font-size: 28pt;
+     color: #f7f1e9;
+     line-height: 1.7;
+     }
+     .font18pt-FontC {
+     font-family: 'FontC', sans-serif;
+     font-size: 18pt;
+     color: #405144;
+     line-height: 1.7;
+     }
+     .font22pt-FontC {
+     font-family: 'FontC', sans-serif;
+     font-size: 22pt;
+     color: #405144;
+     line-height: 1.7;
+     }
+    .font22pt-FontC1 {
+            font-family: 'FontC', sans-serif;
+            font-size: 22pt;
+            color: #f7f1e9;
+            line-height: 1.7;
+        }
+    .font100pt-FontB {
+            font-family: 'FontA', serif;
+            font-size: 100pt;
+            font-weight: 900;
+            color: #405143;
+            text-align: center;
+            line-height: 0.9;
+            margin: 50px 0;
+        }
+    .font32pt-FontC {
+            font-family: 'FontC', sans-serif;
+            font-size: 32pt;
+            color: #405143;
+            text-align: center;
+            line-height: 1.3;
+            margin-bottom: 30px;
+        }
+    .font58pt-FontC {
+            font-family: 'FontC', sans-serif;
+            font-size: 58pt;
+            color: #405143;
+            text-align: center;
+            margin: 50px 0;
+            padding: 20px;
+        }
+    .font36pt-FontC {
+            font-family: 'FontC', sans-serif;
+            font-size: 36pt;
+            color: #405144;
+            text-align: center;
+            line-height: 1.3;
+            margin-bottom: 15px;
+        }
+        .font64pt-FontA {
+            font-family: 'FontA', sans-serif;
+            font-size: 64pt;
+            color: #405144;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+.font24pt-FontA {
+            font-family: 'FontA', sans-serif;
+            font-size: 24pt;
+            color: #f7f1e9;
+            text-align: center;
+            line-height: 1.7;
+        }
+
+    .section-dark {
+     background-color: #405144;
+     color: #f7f1e9;
+     padding: 60px 80px;
+     }
+    .svg-container {
+      flex-direction: column;
+      width: 100vw;
+      height: 300px ;
+      position: relative;
+    }
+    .svg-container1 {
+      width: 100vw;
+      height: 600px ;
+      position: relative;
+    }
+    .svg-background {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+    }
+    
+    .overlay-content{
+      position: absolute;
+      z-index: 1;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      font-size: 20px;
+      color: #000;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      white-space: nowrap;
+    }
+    .overlay-content1{
+      position: absolute;
+      z-index: 1;
+      font-size: 20px;
+      color: #000;
+      display: flex;
+      gap: 20px;
+      white-space: nowrap;
+    }
+
+    /* 恢复图片宽度，确保显示 */
+    .decor-img {
+      width: 120px; /* 取消注释，固定宽度 */
+      height: auto;
+    } 
+  </style>
+</head>
+<body>
+  <div style="height: 30px; background-color: #405143;"></div>  
+  <div style="padding-left: 150px;">
+      <img src="队标.png" alt="PhAgri 2025 logo" class="decor-img" style="width: 1000px;">
+    </div>
+  
+  <div class="svg-container">
+    <svg class="svg-background" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" preserveAspectRatio="none">
+      <path d="M0,280 C150,370 300,180 530,280 C700,370 750,220 800,280 L800,400 L0,400 Z" fill="#669999" />
+    </svg>
+    <svg class="svg-background" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" preserveAspectRatio="none">
+      <path d="M0,300 C150,370 300,200 550,300 C675,370 750,220 800,300 L800,400 L0,400 Z" fill="#405143" />
+    </svg>
+    <div class="overlay-content">
+       <div>
+        <p class="font24pt-FontB">
+            Tomatoes, as a high-value cash crop,<br>
+            have been widely cultivated for a long time<br>
+            and hold a significant position in the agricultural economy.<br>
+            <br>
+            <br>
+         </p>
+        </div> 
+      
+    </div>
+ </div>
+    <div class="section-dark" >
+         <h2 class="font40pt-FontB">However</h2>
+        <p class="font28pt-FontB" style="text-align: center;">
+            Studies have found that <b>bacterial diseases</b> can devastate tomato production.
+         </p>
+    </div>  
+    <div class="section-dark">
+        <h2 class="font40pt-FontB">It's not just tomatoes —</h2>
+    </div>
+ <div class="svg-container1" style="background-color: #405143;">
+     <svg class="svg-background" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" preserveAspectRatio="none">
+      <path d="M250,0 L420,0 L420,210 L250,210 Z" fill="#bcb5a1" />
+    </svg>
+     <svg class="svg-background" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" preserveAspectRatio="none">
+      <path d="M230,35 L640,35 L640,150 L230,150 Z" fill="#9e3c29" />
+    </svg>
+     <div class="overlay-content" style="left: 0%;top: 4%;transform: translate(0,0);">
+        <div style="background-color: #f7f1e9;padding: 20px;text-indent: 2em; ">
+            <p class="font18pt-FontC">
+            Crops like <b>citrus, potatoes, and rice,</b> which<br> are very familiar to us, can also suffer yield <br>reductions of 20–30% due to bacterial infections.<br> Crop production worldwide is severely<br> affected by bacterial diseases.
+            </p>
+        </div>
+     </div>
+     <div class="overlay-content" style="background-color: #f7f1e9;padding: 20px;right: 0%;top: 15%;transform: translate(0,0);">
+            <img src="病害1.png" alt="PhAgri 2025 logo" class="decor-img" style="width: 280px;">
+            <img src="病害2.png" alt="PhAgri 2025 logo" class="decor-img" style="width: 280px;">
+        </div>
+ </div>
+ <div class="svg-container1" style="background-color: #405143;height: 180px;">
+    <div class="section-dark" style="padding:0 0 0 0;">
+    <p class="font22pt-FontC" style="background-color: #f7f1e9;width: 900px;height: 170px;padding: 20px;float: left;">
+            <b>The application of traditional chemical pesticides is damaging soil environments... leading to the accumulation of chemical elements and widespread pesticide abuse.</b>
+        </p>
+    </div>
+    <div class="overlay-content1" style="right: 0%;top: 0%;transform: translate(0,0);height:170px;width: 260px;background-color: #bcb5a1;">
+    </div>
+    <div class="overlay-content1" style="right: 3%;top: -50%;">
+        <img src="4 - 农药.png" alt="PhAgri 2025 logo" class="decor-img" style="height: 260px; width: auto;" >
+    </div>
+</div>
+<div class="svg-container1" style="background-color: #405143;height: 250px;" >
+     <div class="overlay-content1" style="left: 0%;top: 10%; background-color: #bcb5a1;padding: 20px;">
+        <img src="蔬菜.png" alt="PhAgri 2025 logo" class="decor-img" style="height: 170px;width: auto; ">
+    </div>
+     <div class="overlay-content1" style="right: 0%;top: 10%; background-color: #f7f1e9;padding: 10px;height: 210px;width: 650px;">
+        <p class="font22pt-FontC" style="margin-top: 30px;">
+         <b>Long-term use of antibiotics easily leads to<br> bacterial resistance, drastically reducing their<br> effectiveness.</b>
+        </p>
+    </div>
+</div>
+<div class="section-dark" style="padding:20 0 0 10;height: 445px; width: 500;float: left;">
+        <img src="5 - 学生.png" alt="PhAgri 2025 logo" class="decor-img" style="height: 450px; width: auto;" >
+    </div>
+<div class="section-dark" style="padding:20 0 0 0;height: 445px;">
+     <p class="font22pt-FontC1">
+         As students at an agricultural university, we recognize that food security is vital to human survival. We aim to develop a sustainable biological pesticide that can precisely target<br> and eliminate pathogenic bacteria.
+        </p>
+</div>
+<div class="svg-container1" style="background-color: #f2f2f2;height: 600px;">
+     <svg class="svg-background" xmlns="http://www.w3.org/2000/svg" viewBox="0 200 400 600" preserveAspectRatio="none">
+      <path d="M0,800 C400,0 600,250 800,800 L250,800 Z" fill="#405143" />
+    </svg>
+    <div class="overlay-content1" style="right: 0%;top: 50%;height: 210px;width: 550px;">
+        <p class="font22pt-FontC1" >
+         Bacteriophages are natural<br> bacterial killers, but ordinary<br> phages can reproduce <br>uncontrollably in the<br> environment.
+        </p>
+    </div>
+    <div style="background-color: #405143;height: 50px;"></div>
+</div>
+ <div class="section-dark "style="text-align: center;height: 300px;">
+            <p class="font22pt-FontC1">
+                Although existing phage cocktail therapies can kill pathogens to some extent,<br> they still face issues such as interactions between different phages<br> that reduce their antibacterial efficacy.
+            </p>
+        </div>
+<div class="svg-container" style="background-color: #405143;height: 400px ;">
+    <svg class="svg-background" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" preserveAspectRatio="none">
+      <path d="M0,280 L200,370 L400,180 L620,390 L800,200 L800,400,L0,400 Z" fill="#f7f1e9" />
+    </svg>
+</div>
+<div style="height: 550px;">
+    <h2 class="font100pt-FontB">What if...</h2>
+            <p class="font32pt-FontC">
+                We could engineer phage particles to<br>
+                <b>efficiently and controllably eliminate pathogenic bacteria?</b>
+            </p>
+</div>
+ <div style="height: 650px; text-align: center">
+            <p class="font58pt-FontC">
+                Phage + Agriculture = PhAgri
+            </p>
+            <img src="9 - 图标.png" alt="Team Logo" style="width: 550px; height:auto;">
+            
+        </div>
+  <div >
+            <h2 class="font36pt-FontC">PhAgri is a powerful</h2>
+            <h2 class="font64pt-FontA">WEAPON</h2>
+           
+        </div>
+<div class="svg-container" style="height: 130px ;">
+    <svg class="svg-background" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 130" preserveAspectRatio="none">
+      <path d="M0,100 L200,50 L400,120 L720,80 L800,130 L800,130,L0,130 Z" fill="#405143" />
+    </svg>
+</div>
+ <div class="section-dark" style="text-align: center;line-height: 1.7;">
+            <p class="font22pt-FontC1" style="margin-top: 30px;white-space: nowrap;font-size: 20pt;">
+                PhAgri leverages the high specificity of bacteriophages,<br> turning them into an efficient delivery system.<br> This technology can not only be applied in agriculture but also serve as a versatile carrier platform.
+            </p>
+        </div>
+</body>
+<div class="section-dark" style="display:flex;gap: 400px;height: 200;">
+    <img src="10 - 动物.png" alt="Team Logo" style="width: 300px; height:auto;">
+    <img src="10 - 1水域.png" alt="Team Logo" style="width: 300px; height:auto;">
+   
+</div>
+ <div class="section-dark" style="display: flex;gap: 20px; justify-content: space-around; align-items: center;margin: 0 auto;">
+            <div style="text-align: center;">
+                
+                <p class="font24pt-FontA"><b>Phage + animal = Phanimal</b></p>
+            </div>
+            <div style="text-align: center;margin: 30;" >
+        
+                <p class="font24pt-FontA">Phage + environment = Phagenvironment</p>
+            </div>
+        </div>
+     <div class="section-dark">
+            <p class="font22pt-FontC1" style="font-size: 20pt;text-align: center;">
+                With slight modifications to existing systems, controllable phage particles can be<br> used to target and eradicate pathogens in various common environments.<br> This offers a new production paradigm and provides a "phage+" delivery platform for society.
+            </p>
+        </div>
+     <div class="section-dark" style="text-align: center;">
+           <img src="dsdyy.png" alt="Team Logo" style="width: 1000px; height:auto;">
+        </div>
+</html>
